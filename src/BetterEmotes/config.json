@@ -1,0 +1,19 @@
+{
+    "info": {
+        "name": "BetterEmotes",
+        "authors": [{
+            "name": "Shrey Pandya",
+            "discord_id": "231147918336327680",
+            "github_username": "shrey150",
+            "twitter_username": "shrey150"
+        }],
+        "version": "0.1.1",
+        "description": "Revamps BetterDiscord's emote system",
+        "github": "https://github.com/shrey150/bbd-emotes-plugin",
+        "github_raw": "https://raw.githubusercontent.com/shrey150/bbd-emotes-plugin/master/dist/BetterEmotes.plugin.js"
+    },
+    "changelog": [
+        {"title": "Minor update", "items": ["Added forsen emotes"]}
+    ],
+    "main": "index.js"
+}

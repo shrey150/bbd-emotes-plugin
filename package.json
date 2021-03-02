@@ -1,0 +1,34 @@
+{
+  "name": "bbd-emotes-plugin",
+  "version": "0.1.1",
+  "description": "Revamps BetterDiscord's emote system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shrey150/bbd-emotes-plugin"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "foodoc": "^0.0.9",
+    "jsdoc": "^3.6.4",
+    "mocha": "^8.1.3",
+    "raw-loader": "^4.0.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.js local"
+  },
+  "author": "Shrey Pandya",
+  "license": "MIT",
+  "defaultConfig": {
+    "pluginsFolder": "./src",
+    "releaseFolder": "./dist",
+    "copyToBD": true,
+    "addInstallScript": true
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
