@@ -32,7 +32,7 @@
 @else@*/
 
 module.exports = (() => {
-    const config = {"info":{"name":"BetterEmotes","authors":[{"name":"Shrey Pandya","discord_id":"231147918336327680","github_username":"shrey150","twitter_username":"shrey150"}],"version":"0.1.1","description":"Revamps BetterDiscord's emote system","github":"https://github.com/shrey150/bbd-emotes-plugin","github_raw":"https://raw.githubusercontent.com/shrey150/bbd-emotes-plugin/master/dist/BetterEmotes.plugin.js"},"changelog":[{"title":"Minor update","items":["Added forsen emotes"]}],"main":"index.js"};
+    const config = {"info":{"name":"BetterEmotes","authors":[{"name":"Shrey Pandya","discord_id":"231147918336327680","github_username":"shrey150","twitter_username":"shrey150"}],"version":"0.1.2","description":"Revamps BetterDiscord's emote system","github":"https://github.com/shrey150/bbd-emotes-plugin","github_raw":"https://raw.githubusercontent.com/shrey150/bbd-emotes-plugin/master/dist/BetterEmotes.plugin.js"},"changelog":[{"title":"Fixed emote order","items":["Updated priority of emotes so that xqc's emotes of the same name take priority over forsen (sorry bajs)"]}],"main":"index.js"};
 
     return !global.ZeresPluginLibrary ? class {
         constructor() {this._config = config;}
@@ -70,7 +70,7 @@ module.exports = (() => {
 
             // hardcoded to xqc and forsen emotes for now;
             // TODO add settings menu to configure channels
-            request.get(`https://bbd-emotes-generator.herokuapp.com?channels=71092938,22484632`, { json: true }, (err, res, body) => {
+            request.get(`https://bbd-emotes-generator.herokuapp.com?channels=22484632,71092938`, { json: true }, (err, res, body) => {
 
                 if (err) {
                     BdApi.alert("Error loading emotes", "There was a problem loading your custom emotes, please try again later.");

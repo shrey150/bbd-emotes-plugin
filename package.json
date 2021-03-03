@@ -1,6 +1,6 @@
 {
   "name": "bbd-emotes-plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Revamps BetterDiscord's emote system",
   "repository": {
     "type": "git",

@@ -7,13 +7,13 @@
             "github_username": "shrey150",
             "twitter_username": "shrey150"
         }],
-        "version": "0.1.1",
+        "version": "0.1.2",
         "description": "Revamps BetterDiscord's emote system",
         "github": "https://github.com/shrey150/bbd-emotes-plugin",
         "github_raw": "https://raw.githubusercontent.com/shrey150/bbd-emotes-plugin/master/dist/BetterEmotes.plugin.js"
     },
     "changelog": [
-        {"title": "Minor update", "items": ["Added forsen emotes"]}
+        {"title": "Fixed emote order", "items": ["Updated priority of emotes so that xqc's emotes of the same name take priority over forsen (sorry bajs)"]}
     ],
     "main": "index.js"
 }
